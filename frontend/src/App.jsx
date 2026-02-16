@@ -6,7 +6,7 @@ import ThreatList from './components/ThreatList';
 import CyberMap from './components/CyberMap';
 import StatsPanel from './components/StatsPanel';
 
-const API_Base = import.meta.env.VITE_API_BASE || 'http://127.0.0.1:8001';
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 function App() {
   const [devices, setDevices] = useState([]);
@@ -19,10 +19,11 @@ function App() {
     // Don't set loading true here to avoid flickering on auto-refresh
     try {
       const [devRes, threatRes, indRes, statRes] = await Promise.all([
-        axios.get(`${API_Base}/devices`),
-        axios.get(`${API_Base}/threats`),
-        axios.get(`${API_Base}/indicators`),
-        axios.get(`${API_Base}/stats`)
+        axios.get(`${API_BASE}/devices`),
+axios.get(`${API_BASE}/threats`),
+axios.get(`${API_BASE}/indicators`),
+axios.get(`${API_BASE}/stats`)
+
       ]);
       setDevices(devRes.data);
       setThreats(threatRes.data);
