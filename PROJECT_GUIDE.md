@@ -150,5 +150,3 @@ threat-monitor/
 
 ---
 
-## 9. Deployment (Cloud)
-For detailed instructions on deploying this application to **Render (Backend)** and **Vercel (Frontend)**, please refer to the [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) file included in this package.
