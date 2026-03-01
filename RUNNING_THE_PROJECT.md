@@ -1,3 +1,5 @@
+# Deployed version:
+https://threat-intel-dashboard-mauve.vercel.app/
 # Running the Project Locally
 
 This guide provides step-by-step instructions to set up and run the Cyber Threat Intelligence Monitoring System on your local machine.
